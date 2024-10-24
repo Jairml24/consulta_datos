@@ -1,0 +1,48 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./../src/output.css" rel="stylesheet">
+    <title>CONSULTAS</title>
+</head>
+<style>
+    @media print {
+        .no_print {
+            display: none;
+        }
+
+        @page {
+            margin: 0mm 0mm 0mm 0mm;
+        }
+
+        #datos {
+            /* margin:100px; */
+            width: 100vh;
+            padding: 40px;
+            font-size: 22px;
+            border: 0;
+        }
+
+        #foto {
+            width: 332px;
+        }
+    }
+
+    @keyframes loading {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .carga {
+        border: 6px dotted black;
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        animation: loading 2s infinite linear;
+    }
+</style>
