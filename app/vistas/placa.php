@@ -7,11 +7,11 @@
         <?php include './partials/menu.html'; ?>
         <!-- CONSULTA RENIEC  -->
         <div class='p-3 w-6/6 sm:w-5/6'>
-            <h3 class=' text-[30px] no_print font-thin'>CONSULTA POR NOMBRES</h3>
+            <h3 class=' text-[30px] no_print font-thin'>CONSULTA POR PLACA</h3>
             <div class='contenedor-formulario no_print'>
                 <form class="flex gap-5">
                     <div>
-                        <input placeholder="Nombres apellidos" type="text" id='nombres' name='nombres' class="border p-2 w-[270px] sm:w-[350px] ">
+                        <input placeholder="Ingrese placa" type="number" id='placa' name='placa' class="border p-2 w-[163px] ">
                     </div>
                     <div class="text-center">
                         <button id='btn_buscar'
@@ -23,8 +23,11 @@
             </div>
 
             <!-- mensajes de estado -->
-            <div id='nombres_error' class="hidden text-red-600">
-                <p class='' for="">Ingrese  nombres</p>
+            <div id='placa_error' class="hidden text-red-600">
+                <p class='' for="">Ingrese numero de placa</p>
+            </div>
+            <div id='placa_digitos_error' class="hidden text-red-600">
+                <p class='' for="">placa debe de tener 11 digitos</p>
             </div>
 
             <!-- respuesta de web service  -->
@@ -33,7 +36,7 @@
 
     </div>
 
-    <script src="./../src/js/nombres.js"></script>
+    <script src="./../src/js/placa.js"></script>
 </body>
 
 </html>
