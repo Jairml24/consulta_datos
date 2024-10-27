@@ -11,7 +11,7 @@
             <div class='contenedor-formulario no_print'>
                 <form class="flex gap-5">
                     <div>
-                        <input placeholder="Ingrese placa" type="number" id='placa' name='placa' class="border p-2 w-[163px] ">
+                        <input placeholder="Ingrese placa 3979AM" type="text" id='placa' name='placa' class="border p-2 w-[163px] ">
                     </div>
                     <div class="text-center">
                         <button id='btn_buscar'
@@ -27,7 +27,7 @@
                 <p class='' for="">Ingrese numero de placa</p>
             </div>
             <div id='placa_digitos_error' class="hidden text-red-600">
-                <p class='' for="">placa debe de tener 11 digitos</p>
+                <p class='' for="">placa debe de tener 6 digitos</p>
             </div>
 
             <!-- respuesta de web service  -->
